@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Environment variables / secrets — never commit API keys
+.env
+
+# Editor
+.vscode/
+.idea/
