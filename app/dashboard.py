@@ -9,11 +9,17 @@ USAGE:
 """
 
 import sqlite3
+from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-DB_PATH = "../data/trials.db"
+# Anchor the DB path to this script's own location, not the working
+# directory — Streamlit Cloud runs the app from a different working
+# directory than a local `streamlit run` from inside app/, so a plain
+# relative path like "../data/trials.db" breaks in deployment even
+# though it works locally.
+DB_PATH = Path(__file__).resolve().parent.parent / "data" / "trials.db"
 
 st.set_page_config(page_title="Clinical Trials Intelligence Explorer", layout="wide")
 
