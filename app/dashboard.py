@@ -157,6 +157,6 @@ with tab4:
 
 st.divider()
 st.caption(
-    "Built by [Your Name] — data cleaning, SQL schema, and analysis at "
+    "Built by Brij Vachhani — data cleaning, SQL schema, and analysis at "
     "github.com/brijvachhani2311/clinical-trials-intelligence-explorer"
 )
